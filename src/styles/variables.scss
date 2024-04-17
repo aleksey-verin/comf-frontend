@@ -1,0 +1,44 @@
+// для корректных брейкпоинтов на 1000px
+// $sm: 999.9px;
+// $lg: 1439.9px;
+// $xl: 1919.9px;
+
+$mobile: 319.9px;
+$tablet: 767.9px;
+$desktop: 1279.9px;
+
+// colors
+
+$light-grey: #F7F7F7;
+$black: #1E1E1E;
+$black-text: #171412;
+$red: #ed4743;
+$white: #ffffff;
+$beige: #faf6ef;
+$redGradientHover: linear-gradient(
+    0deg,
+    rgba(23, 20, 18, 0.2),
+    rgba(23, 20, 18, 0.2)
+  ),
+  #ed4743;
+
+// $pink: #E31182;
+// $purple: #979EF3;
+// $grey: #CCCCCC;
+// $white: #ffffff;
+// $dark-purple: #7A83ED;
+// $dark-grey: #A5A5A5;
+
+// $ease: 0.3s ease;
+// $linear: 0.3s linear;
+
+// font-family
+
+// --font-GothamBook - Gotham-Book.woff2
+// --font-GothamMedium - Gotham-Medium.woff2
+
+$gotham-book: var(--font-GothamBook), Arial, Helvetica, sans-serif;
+$gotham-medium: var(--font-GothamMedium), Arial, Helvetica, sans-serif;
+$default-font-size: 16rem;
+
+// font-size

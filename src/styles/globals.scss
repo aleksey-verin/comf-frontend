@@ -1,0 +1,102 @@
+@import 'variables';
+@import 'reset';
+
+:root {
+  box-sizing: border-box;
+}
+
+
+
+
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: $black-text;
+  background-color: $light-grey;
+  font-family: $gotham-book;
+
+  font-size: 1px;
+
+  @media screen and (max-width: $desktop) {
+    font-size: calc(100vw / 768); // for width 1280px
+  }
+  @media screen and (max-width: $tablet) {
+    font-size: calc((100 / 320) * 1vw); // for width 770px
+  }
+}
+
+body {
+  font-size: $default-font-size;
+}
+
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin: -1rem;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1280rem;
+  padding-left: 45rem;
+  padding-right: 45rem;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 40rem;
+  line-height: 48rem;
+  text-transform: uppercase;
+  color: $black-text;
+  margin-bottom: 60rem;
+  &--white {
+    color: $white;
+  }
+}
+
+@media (max-width: $desktop) {
+  .container {
+    max-width: 768rem;
+    padding-left: 30rem;
+    padding-right: 30rem;
+  }
+}
+
+@media (max-width: $tablet) {
+  .container {
+    max-width: 320rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .title {
+    font-size: 24rem;
+    line-height: 29rem;
+    margin-bottom: 16rem;
+  }
+}
