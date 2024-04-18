@@ -3,7 +3,7 @@
 
 .information {
   background-color: $beige;
-  padding-top: 120px;
+  padding-top: 120rem;
 }
 .information__wrapper {
   position: relative;
@@ -11,13 +11,13 @@
 .information__tab {
   @include btn-reset;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 40rem;
   color: $black-text;
-  line-height: 48px;
+  line-height: 48rem;
   text-transform: uppercase;
   opacity: 0.17;
   transition: opacity 0.2s ease;
-  padding-left: 54px;
+  padding-left: 54rem;
   &--active {
     color: $black-text;
     opacity: 1;
@@ -30,24 +30,24 @@
 .information__tab-list {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   position: relative;
-  padding-bottom: 152px;
+  padding-bottom: 152rem;
 }
 .information__description {
   font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 22rem;
+  line-height: 26rem;
   margin-top: 0;
   position: absolute;
   right: 0;
   top: 0;
-  max-width: 462px;
+  max-width: 462rem;
 }
 .information__tab-bullet {
-  width: 38px;
-  height: 38px;
+  width: 38rem;
+  height: 38rem;
   background-image: url(/img/bullet.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -55,7 +55,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  margin-top: 6px;
+  margin-top: 6rem;
   transition: top 0.3s ease;
 }
 
@@ -65,7 +65,7 @@
   justify-content: space-between;
   align-items: center;
   flex-basis: content;
-  padding-bottom: 180px;
+  padding-bottom: 180rem;
 }
 
 .information__symptom-item {
@@ -84,8 +84,8 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 484px;
-    height: 484px;
+    width: 484rem;
+    height: 484rem;
     transform: translate(-50%, -50%) scale(0);
     background-image: url(/img/decor-hover-circle.png);
     background-position: center;
@@ -95,9 +95,9 @@
     z-index: 0;
     transition: transform 0.6s ease;
   }
-  max-width: 266px;
+  max-width: 266rem;
   &--image {
-    max-width: 300px;
+    max-width: 300rem;
     z-index: 3;
   }
   &--itching {
@@ -128,10 +128,10 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
-      width: 140px;
-      height: 150px;
-      right: -30px;
-      bottom: -30px;
+      width: 140rem;
+      height: 150rem;
+      right: -30rem;
+      bottom: -30rem;
       z-index: 4;
     }
   }
@@ -142,9 +142,9 @@
   border-radius: 50%;
   position: relative;
   z-index: 2;
-  height: 300px;
-  max-width: 300px;
-  width: 300px;
+  height: 300rem;
+  max-width: 300rem;
+  width: 300rem;
   img {
     position: absolute;
     width: 100%;
@@ -157,28 +157,28 @@
 
 .information__symptom-head {
   font-weight: 500;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 40rem;
+  line-height: 48rem;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: 8rem;
 }
 .information__symptom-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 266px;
-  width: 266px;
+  height: 266rem;
+  width: 266rem;
   justify-content: center;
-  border: 1px solid $black-text;
+  border: 1rem solid $black-text;
   border-radius: 50%;
   position: relative;
   z-index: 3;
 }
 
 .information__symptom-text {
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 28rem;
+  padding-right: 28rem;
 }
 [data-tab-content].hidden {
   display: none;
@@ -188,13 +188,13 @@
 }
 [data-animate-tab] {
   opacity: 0;
-  transform: translateX(-30px);
+  transform: translateX(-30rem);
   transition: transform var(--time-anamate) ease,
     opacity var(--time-anamate) ease;
   &.information__description {
-    transform: translateY(30px);
+    transform: translateY(30rem);
     &.active {
-      transform: translateY(0px);
+      transform: translateY(0rem);
     }
   }
 }
@@ -206,30 +206,30 @@
 
 @media (max-width: $desktop) {
   .information {
-    padding-top: 80px;
+    padding-top: 80rem;
   }
   .information__description {
     position: static;
     max-width: 100%;
-    margin-bottom: 51px;
+    margin-bottom: 51rem;
     font-weight: 400;
-    font-size: 22px;
-    padding-left: 53px;
-    line-height: 26px;
+    font-size: 22rem;
+    padding-left: 53rem;
+    line-height: 26rem;
   }
   .information__tab-list {
-    padding-bottom: 65px;
+    padding-bottom: 65rem;
   }
   .information__symptom-item {
     margin-right: 0;
     flex-basis: 33.4%;
-    margin-bottom: 39px;
+    margin-bottom: 39rem;
     &::after {
-      width: 407px;
-      height: 407px;
+      width: 407rem;
+      height: 407rem;
     }
     &--image {
-      width: 225px;
+      width: 225rem;
     }
     &:nth-child(3n + 3) {
       margin-left: auto;
@@ -242,10 +242,10 @@
       }
     }
     &--smear::before {
-      width: 101px;
-      height: 138px;
-      right: -6px;
-      bottom: -43px;
+      width: 101rem;
+      height: 138rem;
+      right: -6rem;
+      bottom: -43rem;
     }
   }
   .information__symptom-item:first-child {
@@ -254,69 +254,69 @@
     }
   }
   .information__symptom-wrap {
-    width: 225px;
-    height: 225px;
+    width: 225rem;
+    height: 225rem;
     margin-right: 0;
     margin-left: auto;
   }
 
   .information__symptom-image {
-    width: 225px;
-    height: 225px;
+    width: 225rem;
+    height: 225rem;
     margin-left: auto;
   }
   .information__list-symptoms {
     flex-wrap: wrap;
-    justify-content: start;
-    padding-bottom: 89px;
+    justify-content: flex-start;
+    padding-bottom: 89rem;
   }
   .information__symptom-text {
-    font-size: 18px;
-    line-height: 22px;
-    padding-left: 23px;
-    padding-right: 23px;
+    font-size: 18rem;
+    line-height: 22rem;
+    padding-left: 23rem;
+    padding-right: 23rem;
   }
 }
 
 @media (max-width: $tablet) {
   .information {
-    padding-top: 60px;
+    padding-top: 60rem;
   }
   .information__tab {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 24rem;
+    line-height: 29rem;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 10rem;
   }
   .information__tab-bullet {
-    margin-top: 1px;
+    margin-top: 1rem;
   }
   .information__description {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 18rem;
+    line-height: 22rem;
     padding-left: 0;
   }
   .information__symptom-wrap {
-    width: 146px;
-    height: 146px;
+    width: 146rem;
+    height: 146rem;
   }
   .information__symptom-head {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 24rem;
+    line-height: 29rem;
   }
   .information__symptom-text {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 12rem;
+    line-height: 14rem;
   }
   .information__symptom-image {
-    height: 146px;
-    width: 146px;
+    height: 146rem;
+    width: 146rem;
   }
   .information__symptom-item {
-    margin-bottom: 16px;
+    margin-bottom: 16rem;
     &:after {
-      width: 273px;
-      height: 273px;
+      width: 273rem;
+      height: 273rem;
     }
     &--itching {
       &::before {
@@ -324,10 +324,10 @@
       }
     }
     &--smear::before {
-      width: 58px;
-      height: 94px;
-      right: -6px;
-      bottom: -24px;
+      width: 58rem;
+      height: 94rem;
+      right: -6rem;
+      bottom: -24rem;
     }
   }
   .information__symptom-item:nth-child(3n + 3) {
@@ -337,18 +337,18 @@
     justify-content: space-between;
   }
   .information__list-symptoms {
-    padding-bottom: 43px;
+    padding-bottom: 43rem;
   }
   .information__description {
-    margin-bottom: 30px;
+    margin-bottom: 30rem;
     
     sup {
-      font-size: 9px;
-      top: -8px;
-      // left: -5px;
+      font-size: 9rem;
+      top: -8rem;
+      // left: -5rem;
     }
   }
   .information__tab-list {
-    padding-bottom: 20px;
+    padding-bottom: 20rem;
   }
 }
