@@ -1,0 +1,41 @@
+@import '@/styles/mixins';
+@import '@/styles/variables';
+
+.ticker {
+  background: $red;
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-top: 23rem;
+  padding-bottom: 24rem;
+}
+
+.ticker__img {
+  display: inline-block;
+  -webkit-animation: scroll 35s infinite linear;
+  -moz-animation: scroll 35s infinite linear;
+  animation: scroll 35s infinite linear;
+  background-image: url(/img/ticker-update.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 2191rem;
+  height: 43rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+@media (max-width: $tablet) {
+  .ticker {
+    padding: 14rem 0;
+  }
+}
