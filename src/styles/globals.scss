@@ -80,6 +80,19 @@ a {
   }
 }
 
+.button {
+  background-color: $red;
+  font-weight: 400;
+  font-size: 14rem;
+  line-height: 17rem;
+  color: $white;
+  display: block;
+  text-align: center;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  text-transform: uppercase;
+}
+
 @media (max-width: $desktop) {
   .container {
     max-width: 768rem;
