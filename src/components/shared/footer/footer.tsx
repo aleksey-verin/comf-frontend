@@ -57,15 +57,15 @@ const Footer = () => {
             <a href='tel:+74957213697' className='footer__phone'>
               +7 (495) 721-36-97
             </a>
-            E-mail: <a href='mailto:info@akrikhin.ru'>info@akrikhin.ru</a> Сайт:
+            E-mail: <a href='mailto:info@akrikhin.ru'>info@akrikhin.ru</a> Сайт:{' '}
             <a href='https://www.akrikhin.ru/'>www.akrikhin.ru</a>
           </p>
         </div>
         <div className='footer__warning'>
           Если при применении лекарственных препаратов компании АО&nbsp;&laquo;АКРИХИН&raquo;
           у&nbsp;вас развивается нежелательная реакция, обязательно сообщите об&nbsp;этом, заполнив
-          <a href='https://www.akrikhin.ru/product/farmakonadzor/'>форму на&nbsp;сайте компании</a>,
-          или по&nbsp;телефонам:
+          <a href='https://www.akrikhin.ru/product/farmakonadzor/'> форму на&nbsp;сайте компании</a>
+          , или по&nbsp;телефонам:{' '}
           <a href='tel:+74957213697'>+7 (495) 721-36-97</a>,
           <a href='tel:+74957029503'>+ 7 (495) 702-95-03</a>. Также вы&nbsp;можете задать
           интересующий вас вопрос по&nbsp;препарату.
