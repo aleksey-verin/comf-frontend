@@ -11,15 +11,17 @@ import Pharmacies from '@/components/home/pharmacies/pharmacies'
 
 export default function Home() {
   return (
-    <main >
-      <Header />
-      <Promo />
-      <Information />
-      <Articles />
-      <Questions />
-      <Ticket />
-      <Pharmacies />
-      <Footer />
+    <main>
+      <div className='articles-page'>
+        <Header />
+        <Promo />
+        <Information />
+        <Articles />
+        <Questions />
+        <Ticket />
+        <Pharmacies />
+        <Footer />
+      </div>
     </main>
   )
 }

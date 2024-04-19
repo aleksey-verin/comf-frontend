@@ -3,9 +3,11 @@ import { useState } from 'react'
 import Burger from './burger'
 import './header.scss'
 import Menu from './menu'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const Header = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false)
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu)
@@ -15,9 +17,9 @@ const Header = () => {
   return (
     <header className={`header ${openMenu ? 'header--open' : ''}`}>
       <div className='header__container container'>
-        <a className='header__logo' href='./index.html'>
-          <img src='./img/logo.png' alt='' />
-        </a>
+        <Link className='header__logo' href='/'>
+          <Image src={'/img/logo.png'} alt='' width={207} height={24}/>
+        </Link>
         <nav className='header__nav nav'>
           <Menu />
           <div className='nav__buy'>

@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link"
 import { useState } from "react"
 
 const Menu = () => {
@@ -49,9 +50,7 @@ const Menu = () => {
         </a>
       </li>
       <li className='nav__item'>
-        <a className='nav__link' href='./articles-page.html'>
-          статьи
-        </a>
+        <Link href={'/articles'} className='nav__link'>статьи</Link>
       </li>
       <li className='nav__item'>
         <a className='nav__link' href='./#faq' data-section='#faq'>

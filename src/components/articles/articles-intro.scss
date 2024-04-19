@@ -1,0 +1,27 @@
+@import '@/styles/variables';
+
+.articles-intro__title {
+  font-weight: 500;
+  font-size: 64rem;
+  line-height: 100%;
+  padding-bottom: 30rem;
+  padding-top: 47rem;
+  margin-bottom: 0;
+  border-bottom: 1rem solid rgba($black-text, 0.2);
+}
+
+@media (max-width: $desktop) {
+  .articles-intro__title {
+    font-weight: 500;
+    font-size: 48rem;
+    line-height: 100%;
+    padding-bottom: 16rem;
+    padding-top: 50rem;
+  }
+}
+
+@media (max-width: $tablet) {
+  .articles-intro__title {
+    margin-bottom: 0;
+  }
+}
