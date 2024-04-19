@@ -15,7 +15,7 @@ html, body {
   color: $black-text;
   background-color: $light-grey;
   font-family: $gotham-book;
-
+  scroll-behavior: smooth;
   font-size: 1px;
 
   @media screen and (max-width: $desktop) {
@@ -28,6 +28,7 @@ html, body {
 
 body {
   font-size: $default-font-size;
+
 }
 
 
