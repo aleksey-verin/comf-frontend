@@ -7,7 +7,7 @@ const Footer = () => {
       <div className='footer__container container'>
         <div className='footer__nav'>
           <a href='#' className='footer__nav-logo'>
-            <img src='./img/footer-logo.png' alt='' />
+            <img src='/img/footer-logo.png' alt='' />
           </a>
           <ul className='footer__nav-list'>
             <li className='footer__nav-item'>
@@ -93,8 +93,8 @@ const Footer = () => {
         </div>
         <div className='footer__disclaimer'>
           <picture>
-            <source media='(max-width: 767px)' srcSet='./img/disclaimer-mob.svg' />
-            <img src='./img/disclaimer.svg' alt='' />
+            <source media='(max-width: 767px)' srcSet='/img/disclaimer-mob.svg' />
+            <img src='/img/disclaimer.svg' alt='' />
           </picture>
         </div>
         <Footnote />

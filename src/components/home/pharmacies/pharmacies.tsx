@@ -14,27 +14,27 @@ const Pharmacies = () => {
         <ul className='pharmacies__list'>
           <li className='pharmacies__item'>
             <a href='#' className='phermacies__link'>
-              <img src='./img/apteka/apteka.png' alt='pharmacies' />
+              <img src='/img/apteka/apteka.png' alt='pharmacies' />
             </a>
           </li>
           <li className='pharmacies__item'>
             <a href='#' className='phermacies__link'>
-              <img src='./img/apteka/zdravcity.png' alt='pharmacies' />
+              <img src='/img/apteka/zdravcity.png' alt='pharmacies' />
             </a>
           </li>
           <li className='pharmacies__item'>
             <a href='#' className='phermacies__link'>
-              <img src='./img/apteka/eapteka.png' alt='pharmacies' />
+              <img src='/img/apteka/eapteka.png' alt='pharmacies' />
             </a>
           </li>
           <li className='pharmacies__item'>
             <a href='#' className='phermacies__link'>
-              <img src='./img/apteka/aptekamos.png' alt='pharmacies' />
+              <img src='/img/apteka/aptekamos.png' alt='pharmacies' />
             </a>
           </li>
           <li className='pharmacies__item'>
             <a href='#' className='phermacies__link'>
-              <img src='./img/apteka/zhivika.png' alt='pharmacies' />
+              <img src='/img/apteka/zhivika.png' alt='pharmacies' />
             </a>
           </li>
         </ul>

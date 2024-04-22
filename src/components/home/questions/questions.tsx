@@ -88,7 +88,7 @@ const Questions = () => {
             </li>
           </ul>
           <div className='questions__img'>
-            <img src='./img/questions-baby.jpg' alt='baby' />
+            <img src='/img/questions-baby.jpg' alt='baby' />
           </div>
         </div>
         <a className='questions__more'>узнать больше</a>

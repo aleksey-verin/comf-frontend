@@ -66,28 +66,28 @@ const Articles = () => {
           >
             <SwiperSlide className='articles__slide'>
               <a className='articles__link' href='#'>
-                <img src='./img/article-1.jpg' alt='' />
+                <img src='/img/article-1.jpg' alt='' />
                 <h3>Экзема у детей</h3>
                 <div>где купить?</div>
               </a>
             </SwiperSlide>
             <SwiperSlide className='articles__slide'>
               <a className='articles__link' href='#'>
-                <img src='./img/article-2.jpg' alt='' />
+                <img src='/img/article-2.jpg' alt='' />
                 <h3>Аллергия на лице</h3>
                 <div>где купить?</div>
               </a>
             </SwiperSlide>
             <SwiperSlide className='articles__slide'>
               <a className='articles__link' href='#'>
-                <img src='./img/article-3.jpg' alt='' />
+                <img src='/img/article-3.jpg' alt='' />
                 <h3>Дерматит</h3>
                 <div>где купить?</div>
               </a>
             </SwiperSlide>
             <SwiperSlide className='articles__slide'>
               <a className='articles__link' href='#'>
-                <img src='./img/article-3.jpg' alt='' />
+                <img src='/img/article-3.jpg' alt='' />
                 <h3>Дерматит</h3>
                 <div>где купить?</div>
               </a>

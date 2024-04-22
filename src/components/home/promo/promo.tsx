@@ -22,9 +22,9 @@ const Promo = () => {
           <div className='promo__container container'>
             <div className='promo__img'>
               <picture>
-                <source media='(max-width: 767px)' srcSet='./img/promo-banner-mobile-1.png' />
-                <source media='(max-width: 1279px)' srcSet='./img/promo-banner-tablet-1.png' />
-                <img src='./img/promo-banner-1.png' alt='' />
+                <source media='(max-width: 767px)' srcSet='/img/promo-banner-mobile-1.png' />
+                <source media='(max-width: 1279px)' srcSet='/img/promo-banner-tablet-1.png' />
+                <img src='/img/promo-banner-1.png' alt='' />
               </picture>
             </div>
             <div className='promo__wrapp'>
@@ -41,7 +41,7 @@ const Promo = () => {
                   {' '}
                   Kомфодерм<sup className='reg'>&reg;</sup> K
                 </h2>
-                <img src='./img/product-1.png' alt='' />
+                <img src='/img/product-1.png' alt='' />
                 <div className='product__info'>
                   <div className='product__info-text'>
                     <p>
@@ -63,9 +63,9 @@ const Promo = () => {
           <div className='promo__container container'>
             <div className='promo__img'>
               <picture>
-                <source media='(max-width: 767px)' srcSet='./img/promo-banner-mobile-2.png' />
-                <source media='(max-width: 1279px)' srcSet='./img/promo-banner-tablet-2.png' />
-                <img src='./img/promo-banner-2.png' alt='' />
+                <source media='(max-width: 767px)' srcSet='/img/promo-banner-mobile-2.png' />
+                <source media='(max-width: 1279px)' srcSet='/img/promo-banner-tablet-2.png' />
+                <img src='/img/promo-banner-2.png' alt='' />
               </picture>
             </div>
             <div className='promo__wrapp'>
@@ -80,7 +80,7 @@ const Promo = () => {
               <div className='promo__product product'>
                 <h2>Кoмфодерм мазь</h2>
                 <div>
-                  <img src='./img/product-2.png' alt='' />
+                  <img src='/img/product-2.png' alt='' />
                 </div>
                 <div className='product__info'>
                   <div className='product__info-text'>
@@ -103,9 +103,9 @@ const Promo = () => {
           <div className='promo__container container'>
             <div className='promo__img'>
               <picture>
-                <source media='(max-width: 767px)' srcSet='./img/promo-banner-mobile-3.png' />
-                <source media='(max-width: 1279px)' srcSet='./img/promo-banner-tablet-3.png' />
-                <img src='./img/promo-banner-3.png' alt='' />
+                <source media='(max-width: 767px)' srcSet='/img/promo-banner-mobile-3.png' />
+                <source media='(max-width: 1279px)' srcSet='/img/promo-banner-tablet-3.png' />
+                <img src='/img/promo-banner-3.png' alt='' />
               </picture>
             </div>
             <div className='promo__wrapp'>
@@ -119,7 +119,7 @@ const Promo = () => {
               </div>
               <div className='promo__product product'>
                 <h2>Кoмфодерм M2</h2>
-                <img src='./img/product-3.png' alt='' />
+                <img src='/img/product-3.png' alt='' />
                 <div className='product__info'>
                   <div className='product__info-text'>
                     <p>
