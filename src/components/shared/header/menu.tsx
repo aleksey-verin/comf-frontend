@@ -1,7 +1,7 @@
 'use client'
 
-import Link from "next/link"
-import { useState } from "react"
+import Link from 'next/link'
+import { useState } from 'react'
 
 const Menu = () => {
   const [open, setOpen] = useState(false)
@@ -45,17 +45,19 @@ const Menu = () => {
         </div>
       </li>
       <li className='nav__item'>
-        <a className='nav__link' href='./#information' data-section='#information'>
+        <Link href={'/#information'} className='nav__link'>
           симптомы заболеваний
-        </a>
+        </Link>
       </li>
       <li className='nav__item'>
-        <Link href={'/articles'} className='nav__link'>статьи</Link>
+        <Link href={'/articles'} className='nav__link'>
+          статьи
+        </Link>
       </li>
       <li className='nav__item'>
-        <a className='nav__link' href='./#faq' data-section='#faq'>
+        <Link href={'/#faq'} className='nav__link'>
           вопрос-ответ
-        </a>
+        </Link>
       </li>
     </ul>
   )
