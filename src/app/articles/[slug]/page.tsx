@@ -1,5 +1,6 @@
 import { Metadata, ResolvingMetadata } from 'next'
-import styles from './page.module.scss'
+import ArticlePromo from '@/components/article/article-promo'
+import ArticleContent from '@/components/article/article-content'
 
 type Props = {
   params: { slug: string }
@@ -15,5 +16,10 @@ export async function generateMetadata(
 }
 
 export default function Articles({ params }: { params: { slug: string } }) {
-  return <main className={styles.articles_page}>Hello {params.slug}</main>
+  return (
+    <main>
+      <ArticlePromo />
+      <ArticleContent />
+    </main>
+  )
 }

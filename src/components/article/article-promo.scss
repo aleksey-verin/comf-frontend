@@ -1,0 +1,128 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.promo-article {
+  position: relative;
+
+  padding-top: 48rem;
+  padding-bottom: 20rem;
+}
+
+.promo-article__image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+.promo-article__container {
+  height: 100%;
+}
+.promo-article__title {
+  max-width: 475rem;
+  font-size: 64rem;
+  line-height: 100%;
+  font-weight: 500;
+  margin-bottom: 20rem;
+}
+
+.promo-article__info {
+  position: relative;
+  min-height: 421rem;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.promo-article__tags-list {
+  @include list-reset;
+  display: flex;
+  max-width: 697rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+.promo-article__item {
+  padding-right: 8rem;
+  padding-bottom: 19rem;
+  a {
+    background-color: $white;
+    display: block;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-right: 18rem;
+    padding-left: 18rem;
+    border-radius: 71rem;
+    font-size: 18rem;
+    line-height: 22rem;
+    text-decoration: underline;
+    font-weight: 500;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+@media (max-width: $desktop) {
+  .promo-article__title {
+    font-size: 48rem;
+    line-height: 100%;
+    margin-bottom: 54rem;
+  }
+  .promo-article__info {
+    min-height: 381rem;
+  }
+}
+@media (max-width: $tablet) {
+  .promo-article {
+    min-height: 447rem;
+    padding-bottom: 22rem;
+  }
+  .promo-article__info {
+    min-height: auto;
+  }
+  .promo-article__image {
+    position: relative;
+    margin-bottom: 30rem;
+  }
+  .promo-article__title {
+    font-size: 24rem;
+    line-height: 100%;
+    margin-bottom: 30rem;
+  }
+  .promo-article {
+    padding-top: 0;
+    background: linear-gradient(
+        360deg,
+        rgba(231, 167, 147, 0.7) 0%,
+        rgba(225, 216, 206, 0) 100%
+      ),
+      linear-gradient(
+        360deg,
+        rgba(225, 216, 206, 0) -45.63%,
+        rgba(222, 210, 196, 0.5) 100%
+      );
+  }
+  .promo-article__item {
+    padding-right: 0;
+    flex-basis: content;
+    padding-bottom: 8rem;
+    a {
+      display: inline-block;
+      font-size: 13rem;
+      line-height: 16rem;
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+      padding-left: 18rem;
+      padding-right: 18rem;
+    }
+  }
+  .promo-article__tags-list {
+    flex-direction: column;
+  }
+}

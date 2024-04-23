@@ -2,29 +2,30 @@ import type { Metadata } from "next";
 import localFont from 'next/font/local'
 import "@/styles/globals.scss";
 
-const gothamBook = localFont({
-  src: '../../public/fonts/Gotham-Book.woff2', 
+// const gothamBook = localFont({
+//   src: '../../public/fonts/Gotham-Book.woff2', 
+//   variable: '--font-GothamBook',
+// })
+// const gothamMedium = localFont({
+//   src: '../../public/fonts/Gotham-Medium.woff2', 
+//   variable: '--font-GothamMedium',
+// })
+
+const gotham = localFont({
+  src: [
+    {
+      path: '../../public/fonts/Gotham-Book.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/Gotham-Medium.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+  ],
   variable: '--font-GothamBook',
 })
-const gothamMedium = localFont({
-  src: '../../public/fonts/Gotham-Medium.woff2', 
-  variable: '--font-GothamMedium',
-})
-
-// const gotham = localFont({
-//   src: [
-//     {
-//       path: '../../public/fonts/Gotham-Book.woff2',
-//       weight: '400',
-//       style: 'normal',
-//     },
-//     {
-//       path: '../../public/fonts/Gotham-Medium.woff2',
-//       weight: '500',
-//       style: 'normal',
-//     },
-//   ],
-// })
 
 export const metadata: Metadata = {
   title: "Comfoderm NextJS",
@@ -39,7 +40,8 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <link rel="icon" href="./favicon.ico" sizes="any" />
-      <body className={`${gothamMedium.variable} ${gothamBook.variable}`}>{children}</body>
+      <body className={`${gotham.variable}`}>{children}</body>
+      {/* <body className={`${gothamMedium.variable} ${gothamBook.variable}`}>{children}</body> */}
     </html>
   );
 }

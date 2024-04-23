@@ -1,18 +1,18 @@
-@import '@/styles/variables';
+// @import '@/styles/variables';
 
-.articles_page {
-  background-color: $beige;
-  padding-bottom: 100rem;
-}
+// .article_page {
+//   background-color: $beige;
+//   padding-bottom: 100rem;
+// }
 
-@media (max-width: $desktop) {
-  .articles_page {
-    padding-bottom: 80rem;
-  }
-}
+// @media (max-width: $desktop) {
+//   .article_page {
+//     padding-bottom: 80rem;
+//   }
+// }
 
-@media (max-width: $tablet) {
-  .articles_page {
-    padding-bottom: 67rem;
-  }
-}
+// @media (max-width: $tablet) {
+//   .article_page {
+//     padding-bottom: 67rem;
+//   }
+// }
