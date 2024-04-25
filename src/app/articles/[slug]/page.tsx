@@ -1,6 +1,8 @@
 import { Metadata, ResolvingMetadata } from 'next'
 import ArticlePromo from '@/components/article/article-promo'
 import ArticleContent from '@/components/article/article-content'
+import ArticleImportant from '@/components/article/article-important'
+import ArticleBottom from '@/components/article/article-bottom'
 
 type Props = {
   params: { slug: string }
@@ -20,6 +22,8 @@ export default function Articles({ params }: { params: { slug: string } }) {
     <main>
       <ArticlePromo />
       <ArticleContent />
+      <ArticleImportant />
+      <ArticleBottom />
     </main>
   )
 }

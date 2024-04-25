@@ -57,7 +57,7 @@
   }
 }
 .article-content__images {
-  margin-bottom: 48rem;
+  padding-bottom: 48rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -148,7 +148,7 @@
     }
   }
   .article-content__images {
-    margin-bottom: 30rem;
+    padding-bottom: 30rem;
   }
   .article-content__info:last-child {
     padding-bottom: 0;
@@ -167,6 +167,7 @@
     flex-direction: column;
   }
   .article-content__title {
+    padding-right: 0;
     flex-basis: auto;
     font-size: 24rem;
     line-height: 100%;
