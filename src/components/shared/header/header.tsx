@@ -18,7 +18,7 @@ const Header = () => {
     <header className={`header ${openMenu ? 'header--open' : ''}`}>
       <div className='header__container container'>
         <Link className='header__logo' href='/'>
-          <Image src={'/img/logo.png'} alt='' width={207} height={24}/>
+          <Image src={'/img/logo.png'} alt='' width={207} height={24} priority/>
         </Link>
         <nav className='header__nav nav'>
           <Menu />
