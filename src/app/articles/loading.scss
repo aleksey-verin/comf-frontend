@@ -10,8 +10,8 @@
 .skeleton-item {
   width: 360rem;
   height: 672rem;
-  animation: alternate 0.8s infinite fade;
-  opacity: 0.3;
+  animation: alternate 0.3s infinite fade;
+  opacity: 0.5;
   &__image {
     width: 100%;
     height: 438rem;
@@ -57,13 +57,13 @@
     background-color: #e3e3e3;
     border-radius: 10rem;
     animation: alternate 0.8s infinite fade;
-    opacity: 0.3;
+    opacity: 0.5;
   }
 }
 
 @keyframes fade {
   from {
-    opacity: 0.3;
+    opacity: 0.5;
   }
 
   to {
