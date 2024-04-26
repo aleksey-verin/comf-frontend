@@ -14,12 +14,12 @@ const nextConfig = {
         port: '1337',
         pathname: '/**',
       },
-      {
-        protocol: 'http',
-        hostname: 'admin-strapi.vereva.ru',
-        port: '1337',
-        pathname: '/**',
-      },
+      // {
+      //   protocol: 'https',
+      //   hostname: 'admin-strapi.vereva.ru',
+      //   port: '1337',
+      //   pathname: '/**',
+      // },
     ],
   },
 }
