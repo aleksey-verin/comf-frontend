@@ -22,9 +22,9 @@ const ArticlesItem = ({
       <div className='articles-grid__wrap'>
         <div className='articles-grid__image'>
           <picture>
-            <source media='(max-width: 767px)' srcSet={imageMobile} />
-            <source media='(max-width: 1279px)' srcSet={imageTablet} />
-            <img src={image} alt={title} />
+            <source media='(max-width: 767px)' srcSet={`${process.env.NEXT_PUBLIC_BASE_URL}${imageMobile}`} />
+            <source media='(max-width: 1279px)' srcSet={`${process.env.NEXT_PUBLIC_BASE_URL}${imageTablet}`} />
+            <img src={`${process.env.NEXT_PUBLIC_BASE_URL}${image}`} alt={title} />
           </picture>
         </div>
         <div className='articles-grid__text'>
